@@ -71,7 +71,7 @@ button:hover {
     cursor: pointer;
   }
 
-@media (min-width: 1120px) {
+@media (min-width: 700px) {
     body {
         background-image: url(./images/background.png);
       }
