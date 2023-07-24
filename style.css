@@ -22,7 +22,7 @@ body {
 main {
     width: 31.9rem;
     margin: auto;
-    box-sizing: content-box;
+    
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
@@ -71,7 +71,7 @@ button:hover {
     cursor: pointer;
   }
 
-@media (min-width: 700px) {
+@media (min-width: 770px) {
     body {
         background-image: url(./images/background.png);
       }
