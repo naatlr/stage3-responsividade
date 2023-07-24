@@ -13,29 +13,29 @@
 }
 
 body {
-    background: #F9F4FB;
     color: #A54328;
     font-size: 1.6rem;
-    padding: 5.3rem 3.7rem 5.4rem;
 }
 
 main {
-    max-width: 17.6875rem;
-    margin: 0 auto;
-    
+    max-width: 33rem;
+    margin-inline: auto;
+    padding: 5.6rem 4rem;
+    box-sizing: content-box;
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
 }
 
 img {
-    margin: 4.677rem 0;
+    width: 100%;
     margin-block: 3.2rem;  /* coloca espaços em cima e em baixo ao mesmo tempo */
 }
 
 h1, h2 {
-    font-size: 2.8rem;
-    line-height: 3.6rem;
+    /* clamp(min, ideal, alto) */
+    font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+    line-height: clamp(3.6rem, 2vw + 1rem, 5rem);
 }
 
 h2 {
@@ -44,8 +44,8 @@ h2 {
     
 
 p, li, strong {
-    font-size: 1.4rem;
-    line-height: 1.8rem;;
+    font-size: clamp(1.4rem, 1vw + 0.4rem, 2rem);
+    line-height: clamp(1.8rem, 1vw + 1rem, 2.5rem);
 }
 
 ul, ol {
@@ -60,9 +60,9 @@ button {
     font-family: 'Source serif 4';
     color: #FFFFFF;
     background-color: #A54328;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     border: 0;
-    padding: .8rem 1.2rem;
+    padding: 0.8rem 1.2rem;
     margin-top: 3.2rem;
 }
 
@@ -76,26 +76,17 @@ button:hover {
         background-image: url(./images/background.png);
       }
     main {
-        display: flex; 
-        gap: 18.9rem; 
-        max-width: 114.9rem;
-    }
-    img {
-        margin: 6.6rem 0;
+        flex-direction: row;
+        max-width: fit-content;
+        gap: 16rem;
+
+        padding: 9rem 6rem;
     }
     .recipe {
         max-width: 43.5rem;
     }
     .ingredients {
         max-width: 52.5rem;
-    }
-    h1, h2 {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-    p, li, strong {
-        font-size: 2rem;
-        line-height: 2.5rem;
     }
     button {
         padding: 1rem 2rem;
