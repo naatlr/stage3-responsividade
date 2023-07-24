@@ -16,12 +16,12 @@ body {
     background: #F9F4FB;
     color: #A54328;
     font-size: 1.6rem;
+    padding: 5.3rem 3.7rem 5.4rem;
 }
 
 main {
-    max-width: 32.0rem;
+    width: 31.9rem;
     margin: auto;
-    padding: 5.6rem 4rem;
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
