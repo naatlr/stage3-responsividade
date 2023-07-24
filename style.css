@@ -20,8 +20,8 @@ body {
 }
 
 main {
-    width: 31.9rem;
-    margin: auto;
+    max-width: 32.0rem;
+    margin: 0 auto;
     
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ main {
 }
 
 img {
-    width: 100%;
+    margin: 4.677rem 0;
     margin-block: 3.2rem;  /* coloca espaços em cima e em baixo ao mesmo tempo */
 }
 
@@ -71,15 +71,17 @@ button:hover {
     cursor: pointer;
   }
 
-@media (min-width: 770px) {
+@media (min-width: 1120px) {
     body {
         background-image: url(./images/background.png);
       }
     main {
         display: flex; 
         gap: 18.9rem; 
-        width: 114.9rem;
-        
+        max-width: 114.9rem;
+    }
+    img {
+        margin: 6.6rem 0;
     }
     .recipe {
         max-width: 43.5rem;
