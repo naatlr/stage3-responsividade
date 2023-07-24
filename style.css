@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-family: 'Source serif Pro';
+    font-size: 62,5%;
+}
+
+body {
+    background: #F9F4FB;
+    color: #A54328;
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 32rem;
+    margin-inline: auto;
+    padding: 5.6rem 4rem;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+img {
+    width: 100%;
+    margin-block: 3.2rem;  /* coloca espaços em cima e em baixo ao mesmo tempo */
+}
+
+h1, h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+}
+
+h2 {
+    margin-bottom: 3.2rem;
+}
+    
+
+p, li, strong {
+    font-size: 1.4rem;
+    line-height: 1.8rem;;
+}
+
+ul, ol {
+    padding-left: 2.4rem;
+}
+
+ul {
+    margin-bottom: 2.4rem;
+}
+
+button {
+    font-family: 'Source serif 4';
+    color: #FFFFFF;
+    background-color: #A54328;
+    border-radius: .6rem;
+    border: 0;
+    padding: .8rem 1.2rem;
+    margin-top: 3.2rem;
+}
+
+button:hover {
+    background-color: #ca4520;
+    cursor: pointer;
+  }
+
+@media (min-width: 1120px) {
+    body {
+        background-image: url(./images/background.png);
+      }
+    main {
+        flex-direction: row;
+        max-width: fit-content;
+        gap: 16rem;
+
+        padding: 9rem 6rem;
+    }
+    .recipe {
+        max-width: 43.5rem;
+    }
+    .ingredients {
+        max-width: 52.5rem;
+    }
+    h1, h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    p, li, strong {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    button {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+}
