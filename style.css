@@ -19,8 +19,8 @@ body {
 }
 
 main {
-    max-width: 32rem;
-    margin-inline: auto;
+    max-width: 32.0rem;
+    margin: auto;
     padding: 5.6rem 4rem;
     box-sizing: content-box;
     display: flex;
