@@ -76,11 +76,10 @@ button:hover {
         background-image: url(./images/background.png);
       }
     main {
-        flex-direction: row;
-        max-width: fit-content;
-        gap: 16rem;
-
-        padding: 9rem 6rem;
+        display: flex; 
+        gap: 18.9rem; 
+        width: 114.9rem;
+        
     }
     .recipe {
         max-width: 43.5rem;
