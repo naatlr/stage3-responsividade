@@ -18,7 +18,7 @@ body {
 }
 
 main {
-    max-width: 33rem;
+    min-width: 33rem;
     margin-inline: auto;
     padding: 5.6rem 4rem;
     box-sizing: content-box;
